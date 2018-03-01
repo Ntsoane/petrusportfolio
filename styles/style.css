@@ -1,0 +1,191 @@
+:root{
+  --primary-color: #5E0B15;
+  --secondary-color:#90323D;
+  --accent-color:#BC8034;
+  --bg-color:#d9CAB3;
+  --shadow-color: #8c7A6B;
+background-image: url("/home/hotel/PROJECTS/POrtFolio2/images/blue.jpg");
+
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+
+}
+/*nav.css*/
+nav {
+background-image: url("/home/hotel/PROJECTS/POrtFolio2/images/qwer.jpg");
+  color: black;
+  text-transform: capitalize;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+background-image: url("/home/hotel/PROJECTS/POrtFolio2/images/qwer.jpg");
+
+  color: black;
+}
+
+nav ul li{
+  list-style-type: none;
+  padding: 1em;
+}
+
+nav ul:first-child{
+  margin-left: 10%;
+  margin-right:auto;
+}
+nav ul li a{
+  text-decoration:none;
+  color: black;
+  padding: 1em;
+}
+
+nav ul li :hover {
+  background-color: white;
+  color: #1b8085;
+  cursor: pointer;
+}
+img{
+  width: 100%;
+  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+header{
+background-image: url("/home/hotel/PROJECTS/POrtFolio2/images/background2.jpg");
+  display: flex;
+  height: 100vh;
+  /* background: radial-gradient(#e66465, #9198e5); */
+}
+div.headerFigure{
+
+  margin: auto;
+  width: 200px;
+
+
+}
+header div.headerFigure h2{
+  width: center;
+  margin: 0 auto;
+}
+header div.headerFigure p{
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/*quote block css*/
+blockquote{
+  margin: 3em auto;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  width: 60%;
+
+}
+
+blockquote #saidBy{
+  text-align: right;
+  font-size: 0.8em;
+}
+
+blockquote #saidBy::before{
+  content: '-'
+}
+blockquote p:first-child::after,
+blockquote p:first-child::before{
+  content: '"'
+}
+
+main{
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr  ));
+  grid-gap: 30px;
+  justify-content: center;
+}
+main figure{
+  margin: 0;
+  border: 2px solid var(--shadow-color)
+}
+main figure img {
+  width: 100%;
+}
+
+main figure figcaption h1,
+main figure figcaption p{
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0.5em 0 0 0;
+  padding: 0 1em;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#contact{
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+  grid-gap: 3em;
+
+}
+
+input[type=text],select,textarea{
+  margin: 5px 0;
+  width: 100%;
+  padding: 1em;
+  border: 0 solid white;
+  background: #54aff4;
+  border-left: 5px solid #4d62ff;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+footer{
+background-image: url("/home/hotel/PROJECTS/POrtFolio2/images/qwer.jpg");
+  text-align:center;
+  padding: auto;
+}
+footer ul{
+  list-style-type: none;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+  /* border: 1px;
+  border-style: solid;
+  /* border-radius:200px; */ */
+}
